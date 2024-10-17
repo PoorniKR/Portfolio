@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./queries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Poornima</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Poornima</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#project" onclick="toggleMenu()">Project</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/Profile.png" alt="Poorni profile pic"/>
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Poornima</h1>
+            <p class="section__text__p2">Aspiring App Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Resume.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact
+                </button>
+            </div>
+            <div id="social-container">
+                <img 
+                    src="./assets/linkedin.png"
+                    alt="LinkedIn"
+                    class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/poornimakarunanidhi1906/'"/>
+                <img 
+                    src="./assets/github.png"
+                    alt="GitHub"
+                    class="icon"
+                    onclick="location.href='https://github.com/PoorniKR'"/>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.png"
+                     alt="profile"
+                     class="about-pic"/>
+                
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png"
+                         alt="Experience"
+                         class="icon"/>
+                        <h3>Experience</h3>
+                        <p>Mobile, Web &<br>Game Development</p>
+                    </div>
+                    
+                    <div class="details-container">
+                        <img src="./assets/education.png"
+                            alt="Education"
+                            class="icon"/>
+                        <h3>Education</h3>
+                        <p>BCA Bachleors Degree<br>MCA Masters Degree</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        I’m a passionate app developer with experience in building mobile, web, and game applications. 
+                        With a solid foundation in programming and a knack for creative problem-solving, I enjoy bringing 
+                        ideas to life through technology. I’m continually exploring new tools and techniques to enhance my 
+                        skills and contribute to innovative projects.
+                    </p>
+                </div>
+            </div>  
+        </div>
+        <img 
+            src="./assets/arrow.png"
+            alt="arrow"
+            class="icon arrow"
+            onclick="location.href='./#experience'"/>
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">App Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png"
+                                alt="experience icon"
+                                class="icon"/>
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png"
+                                alt="experience icon"
+                                class="icon"/>
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png"
+                                alt="experience icon"
+                                class="icon"/>
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png"
+                                alt="experience icon"
+                                class="icon"/>
+                            <div>
+                                <h3>AndroidStudio</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png"
+                                alt="experience icon"
+                                class="icon"/>
+                            <div>
+                                <h3>PostgresSQL</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                    
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Game Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png"
+                                alt="experience icon"
+                                class="icon"/>
+                            <div>
+                                <h3>Unity</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png"
+                                alt="experience icon"
+                                class="icon"/>
+                            <div>
+                                <h3>C#</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>                    
+                    </div> <br>
+                    <h2 class="experience-sub-title">Programming Languages</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png"
+                                alt="experience icon"
+                                class="icon"/>
+                            <div>
+                                <h3>Java</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png"
+                                alt="experience icon"
+                                class="icon"/>
+                            <div>
+                                <h3>Python</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>                    
+                    </div>                   
+                </div>
+            </div>            
+        </div>
+        <img 
+            src="./assets/arrow.png"
+            alt="arrow"
+            class="icon arrow"
+            onclick="location.href='./#project'"/>
+    </section>
+    <section id="project">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img
+                            src="./assets/EndlessRunner.jpg"
+                            alt="Project 1"
+                            class="project-img"/>
+                    </div>
+                    <h2 class="experience-sub-title project-title">Endless Runner Mobile Game</h2>
+                    <div class="btn-container">
+                        <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/PoorniKR/Endless-Runner-Game'">GitHub</button>
+                        <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com'">Live Demo</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img
+                            src="./assets/SpaceShooter.jpg"
+                            alt="Project 2"
+                            class="project-img"/>
+                    </div>
+                    <h2 class="experience-sub-title project-title">Space Shooter Mobile Game</h2>
+                    <div class="btn-container">
+                        <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/PoorniKR/Space-Shooter'">GitHub</button>
+                        <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com'">Live Demo</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img
+                            src="./assets/AndroidApp.jpg"
+                            alt="Project 3"
+                            class="project-img"/>
+                    </div>
+                    <h2 class="experience-sub-title project-title">Funstagram Android App</h2>
+                    <div class="btn-container">
+                        <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/PoorniKR/Android-Application'">GitHub</button>
+                        <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com'">Live Demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img 
+            src="./assets/arrow.png"
+            alt="arrow"
+            class="icon arrow"
+            onclick="location.href='./#contact'"/>
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img 
+                    src="./assets/email.png"
+                    alt="Email"
+                    class="icon contact-icon email-icon"/>
+                <p><a href="mailto:poorni1907@gmail.com">Email</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                    src="./assets/linkedin.png"
+                    alt="LinkedIn"
+                    class="icon contact-icon"/>
+                <p><a href="https://www.linkedin.com/messaging">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+     <footer>
+        <nav>
+            <div class="nav-links-conatiner">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Poornima. All Rights Reserved.</p>
+     </footer>
+    <script src="/script.js"></script>
+</body>
+</html>
