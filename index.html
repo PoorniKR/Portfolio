@@ -45,7 +45,7 @@
             <p class="section__text__p2">Aspiring App Developer</p>
             <div class="btn-container">
                 <button class="btn btn-color-2" onclick="window.open('./assets/Resume.pdf')">
-                    Download CV
+                    Resume
                 </button>
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">
                     Contact
@@ -243,9 +243,19 @@
                         <button
                             class="btn btn-color-2 project-btn"
                             onclick="location.href='https://github.com/PoorniKR/Endless-Runner-Game'">GitHub</button>
-                        <button
+                        <!-- <button
                             class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com'">Demo</button>
+                            onclick="location.href='https://github.com'">Live Demo</button> -->
+                        <button id="popup" class="btn btn-color-2 project-btn">Demo</button>
+                        <div id="videoPopup" class="popup">
+                                <div class="popup-content">
+                                    <span class="close" id="close">×</span>
+                                    <video id="videoElement" width="100%" height="100%" controls>
+                                        <source src="./assets/SpaceShooter.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                        </div>
                     </div>
                 </div>
                 <div class="details-container color-container">
